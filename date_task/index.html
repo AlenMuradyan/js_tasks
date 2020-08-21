@@ -6,37 +6,43 @@
 </head>
 <body>
 <script>
-    let weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    //let modifikator change to const
-    let d = new Date();
-    // let modifikator change to const
-    console.log(`Today is : ${weekDays[d.getDay()]}`);
-    console.log(`Current time is ${d.getHours()} : ${d.getMinutes()} : ${d.getSeconds()}`)
+    // const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+    // const date = new Date();
+    // const today = `Today is : ${weekDays[date.getDay()]}`;
+    // const time = `Current time is ${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`;
+    // const now = `Today is ${today}, Current time is ${time}`;
+    // console.log (now);
 
-    let day = new Date();
-    let d = day.getDate(), m = day.getMonth(), y = day.getFullYear();
+    // const date = new Date();
+    // let day = date.getDate(), month = date.getMonth(), fullYear = date.getFullYear();
+    //
+    // if (day < 10) {
+    //     day = '0' + day;
+    // }
+    //
+    // if (month < 10) {
+    //     month = '0' + month
+    // }
+    // const todayDate = `${day}:${month}:${fullYear}`
+    //
+    // console.log(todayDate);
 
-    if (d < 10) {
-        d = '0' + d;
-    }
 
-    if (m < 10) {
-        m = '0' + m
-    }
+    //let a = 5, b = 6, c = 7;
 
-    console.log(`${d}:${m}:${y}`)
-    let a = 5, b = 6, c = 7;
+    const [a, b, c] = [5, 6, 7];
 
     let p = (a + b + c) / 2;
     let s = Math.sqrt(p * ((p - a)(p - b)(p - c)));
 
     console.log(s)
-    let str = 'w3source';
-    let splitedStr = str.split('');
-    let last = splitedStr.pop();
 
-
-    console.log(last + splitedStr.join(''))
+    // let str = 'w3source';
+    // let splitedStr = str.split('');
+    // let last = splitedStr.pop();
+    //
+    //
+    // console.log(last + splitedStr.join(''))
 </script>
 </body>
 </html>
