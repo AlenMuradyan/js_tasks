@@ -7,21 +7,40 @@
 <body>
     <script>
         const arr = [];
-        while(true){
+        function checkSum(sum) {
+            let flag = 0
+            if((sum % 10) === 0) {
+                console.log(arr);
+                flag=1
+            }
+            return flag;
+        }
+        function generateArraySum() {
+            let flag= false
             let sum = 0;
             arr.push(Math.floor(Math.random() * 9) + 1);
             for(let i of arr){
                 sum += i
             }
-//   for calculate sum of array crete calculateSum() method and put in while
-            if((sum % 10) === 0){
-                console.log(arr);
-                alert('Stop');
-                break
+            console.log(arr,sum);
+            if(checkSum(sum)){
+                alert("stop");
+                flag=true;
             }
-//  for check dividing 10  other method  again put in while
-
+            return flag
         }
+
+       while (true){
+           if( generateArraySum()){
+             break;
+         }
+       }
+
+
+
+
+
+
 
     </script>
 </body>
